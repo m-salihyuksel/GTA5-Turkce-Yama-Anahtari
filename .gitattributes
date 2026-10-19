@@ -1,0 +1,4 @@
+# Windows dosyalari oldugu gibi saklansin (CRLF satir sonu ve UTF-8 BOM korunur)
+*.bat -text
+*.ps1 -text
+BENIOKU.txt -text

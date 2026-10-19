@@ -1,0 +1,93 @@
+﻿GTA V TÜRKÇE YAMA ANAHTARI
+==========================
+
+GTA V Enhanced (ve Legacy) için Türkçe yamayı tek tıkla AÇIP KAPATAN küçük bir Windows uygulaması.
+
+  Türkçe AÇ    -> Hikaye modunu Türkçe oynarsın.
+  Türkçe KAPAT -> Yama dosyaları oyun klasörünün dışına taşınır, oyun orijinal haline döner,
+                  GTA Online'a girebilirsin.
+
+Hiçbir dosya silinmez ya da değiştirilmez; dosyalar sadece yer değiştirir.
+Oyunun kendi dosyalarına dokunulmaz.
+
+
+ÖNCE BUNLAR GEREKLİ
+-------------------
+1) Windows 10 veya 11 (ekstra program kurmana gerek yok, Windows'taki PowerShell ile çalışır).
+2) GTA TR'nin Türkçe yaması kurulu olmalı. Bu uygulama yamanın kendisini İÇERMEZ,
+   sadece kurulu yamayı açıp kapatır. Yamayı buradan indirip kur:
+   https://gtatr.com/gta-5/turkce-yama/   (Universal Türkçe Yama)
+
+
+KURULUM
+-------
+1) Zip dosyasını masaüstünde bir klasöre çıkar (zip'in içinden çalıştırma).
+2) GTA5_Turkce_Anahtar.bat dosyasına çift tıkla.
+3) Windows "Bu uygulamanın değişiklik yapmasına izin veriyor musunuz?" diye sorar -> Evet.
+   (Oyun genelde Program Files içinde olduğu için dosya taşımak yönetici izni ister.)
+4) Uygulama oyunu Steam / Epic / Rockstar kurulumlarından kendisi bulur.
+   Bulamazsa "Gözat..." ile içinde GTA5_Enhanced.exe olan klasörü seç.
+
+Windows dosyayı açmazsa: .bat dosyasına sağ tık -> Özellikler -> alttaki
+"Engellemeyi kaldır" kutusunu işaretle -> Tamam.
+
+
+KULLANIM
+--------
+Hikaye modu:
+  Oyunu kapat -> "Türkçe AÇ" -> oyunu başlat. Oyun ayarlarından altyazıları açmayı unutma.
+
+GTA Online'a geçerken:
+  Oyunu TAMAMEN kapat -> "Türkçe KAPAT" -> durum kutusu mavi
+  "TÜRKÇE KAPALI — Online'a hazır" yazınca oyunu başlat.
+
+Oyun açıkken değişiklik yapılamaz (GTA dosyaları açılışta okur); uygulama da buna izin vermez.
+
+Hızlı kısayollar (pencere açmadan):
+  Online_Oncesi_KAPAT.bat  -> yamayı kapatır
+  Hikaye_Icin_AC.bat       -> yamayı açar
+  İstersen bunlara sağ tık -> Gönder -> Masaüstü (kısayol oluştur) yapıp masaüstünden kullan.
+  İlk seferde ana uygulamayı bir kez açıp oyun klasörünü seçmen yeterli, sonra hatırlanır.
+
+
+NE TAŞINIYOR?
+-------------
+"Türkçe KAPAT" oyun ana klasöründeki şu öğeleri, oyun klasörünün YANINDAKİ bir depo klasörüne taşır:
+
+  xinput1_4.dll  -> Enhanced'de yamayı (ve .asi eklentilerini) yükleyen dosya
+  dinput8.dll    -> Legacy'de aynı işi yapan dosya
+  dsound.dll     -> OpenRPF'in yükleyicisi (varsa)
+  args.txt       -> BattlEye'ı kapatan ayar dosyası (kaldırılınca BattlEye geri gelir; online için gerekli)
+  *.asi          -> OpenRPF.asi gibi eklentiler
+  mods klasörü   -> Türkçe metinler (kutucuk işaretliyse; aynı diskte olduğu için anında taşınır)
+
+Bu liste GTA TR'nin "GTA Online'a girerken" talimatlarıyla aynıdır; uygulama bunu elle
+yapmak yerine tek tıkla yapar ve geri getirir.
+
+Depo klasörünün yeri (örnek, Epic):
+  C:\Program Files\Epic Games\GTAV_TurkceYama_Depo
+Uygulamadaki "Depoyu aç" düğmesiyle görebilirsin. Türkçe kapalıyken bu klasörü SİLME,
+yoksa yamayı yeniden kurman gerekir.
+
+
+OYUN GÜNCELLENDİKTEN SONRA
+--------------------------
+Güncellemeden sonra Türkçe açıkken oyun çökerse, GTA TR'nin söylediği gibi yamayı yeniden kur
+(Universal Türkçe Yama'yı tekrar çalıştır). Sonra uygulamada "Türkçe KAPAT"a basarsan yeni
+dosyalar depoya gider; eskiler silinmez, depodaki "_eski" klasörüne alınır. "_eski" klasörünü
+istediğin zaman silebilirsin.
+
+
+ÖNEMLİ UYARI
+------------
+Rockstar, değiştirilmiş dosyalarla GTA Online'a girmeyi yasaklıyor. Online'a girmeden önce
+uygulamada mavi "Online'a hazır" yazısını gördüğünden emin ol. Uygulama, GTA TR'nin önerdiği
+yolu otomatikleştirir; ancak Rockstar'ın kurallarını ve hile korumasını kontrol edemez, bu
+yüzden kesin bir "ban yemezsin" garantisi verilemez. Türkçe yamayla online'a girmenin yolunu
+anlatan paylaşımları uygulama.
+
+
+KALDIRMA
+--------
+Önce "Türkçe AÇ" ya da "Türkçe KAPAT" ile istediğin durumda bırak, sonra bu klasörü sil.
+Uygulamanın tek ayar dosyası: %APPDATA%\GTA5TurkceYamaAnahtari\ayarlar.json

@@ -2,3 +2,4 @@
 *.bat -text
 *.ps1 -text
 BENIOKU.txt -text
+*.zip binary

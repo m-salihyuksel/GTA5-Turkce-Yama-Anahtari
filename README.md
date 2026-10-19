@@ -16,8 +16,11 @@ Hiçbir dosya silinmez ya da değiştirilmez, dosyalar sadece yer değiştirir. 
 
 ## İndirme
 
-1. Bu sayfanın üstündeki yeşil **Code** düğmesine bas, **Download ZIP**'i seç.
-2. Zip'i masaüstünde bir klasöre çıkar (zip'in içinden çalıştırma).
+### [⬇️ GTA5_Turkce_Anahtar.zip dosyasını indir](https://github.com/m-salihyuksel/GTA5-Turkce-Yama-Anahtari/raw/main/GTA5_Turkce_Anahtar.zip)
+
+Bağlantıya tıklayınca zip doğrudan iner (13 KB). Zip'i masaüstünde bir klasöre çıkar, zip'in içinden çalıştırma.
+
+<sub>SHA-256: `785e21d928af303d2a801a0e46baabb497e017d14a44fe38d82876560c462b85`</sub>
 
 ## Kurulum
 
